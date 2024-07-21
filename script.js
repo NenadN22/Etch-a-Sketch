@@ -7,6 +7,16 @@ function createGrid(squares) {
         console.log(squares)
         square.style.width = `calc(100% / ${squares})`
         square.style.height = `calc(100% / ${squares})`
+        
+        square.addEventListener('mouseover',() => {
+            square.style.backgroundColor = 'blue'
+            })
+        }
+       
     }
-}
+    
+
+
+
+
 createGrid(5);
